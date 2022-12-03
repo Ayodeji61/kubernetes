@@ -1,2 +1,3 @@
-FROM        nginx
-RUN         echo Hello >/usr/share/nginx/html/index.html
+FROM        centos
+RUN         yum install epel-release -y
+RUN         yum install nginx -y
