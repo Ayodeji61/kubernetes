@@ -17,8 +17,8 @@ spec:
         tier: frontend
     spec:
       containers:
-        - name: php-redis
-          image: gcr.io/google_samples/gb-frontend:v3
+        - name: nginx
+          image: nginx
 ---
 apiVersion: v1
 kind: Pod
@@ -31,5 +31,3 @@ spec:
   containers:
     - name: nginx
       image: nginx
-    - name: mongo
-      image: mongo
